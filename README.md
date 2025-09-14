@@ -1,4 +1,4 @@
-# 🚀 Vite + React + TypeScript + Tailwind + shadcn/ui Boilerplate  
+#@ 👇😉 Vite + React + TypeScript + Tailwind + shadcn/ui Boilerplate  
 
 A modern **React + TypeScript** starter template powered by **Vite**, styled with **Tailwind CSS**, and enhanced with **shadcn/ui** components.  
 This project is maintained by **[diorsolutions](https://github.com/diorsolutions)** and is designed to help developers build **fast, scalable, and beautiful web applications**.  
