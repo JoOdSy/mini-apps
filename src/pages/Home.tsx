@@ -50,20 +50,23 @@ export function Home() {
     <div className="space-y-8">
       {/* Hero Section */}
       <div className="text-center py-12">
-        <div className="gradient-hero rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center">
-          <GitBranch className="h-10 w-10 text-white" />
+        <div className="flex justify-center gap-6 items-center">
+          <div className="gradient-hero rounded-full w-12 h-12 mb-6 flex mt-2 items-center justify-center">
+            <GitBranch className="h-5 w-5 text-white" />
+          </div>
+          <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            MiniHub MVP
+          </h1>
         </div>
-        <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-          Monorepo MVP
-        </h1>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-          A complete monorepo example with shared packages and multiple
-          applications
+          This project is a platform that unifies 30 mini-applications under a
+          single monorepo architecture to meet diverse needs. Each application
+          operates independently but is managed through a common system
         </p>
       </div>
 
       {/* Apps Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <Card
           variant="interactive"
           className="p-6 hover:shadow-glow transition-spring"
@@ -125,6 +128,37 @@ export function Home() {
             <Link to="/weather">Open Weather App</Link>
           </Button>
         </Card>
+
+        <Card
+          variant="interactive"
+          className="p-6 hover:shadow-glow transition-spring"
+        >
+          <div className="flex items-center gap-4 mb-4">
+            <div className="bg-accent/10 p-3 rounded-lg">
+              <Cloud className="h-8 w-8 text-accent" />
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold">Weather App</h3>
+              <p className="text-muted-foreground">
+                Let's know your IQ level
+              </p>
+            </div>
+          </div>
+          <div className="space-y-2 mb-4">
+            <Badge variant="outline" className="mr-2">
+              Mock Questions
+            </Badge>
+            <Badge variant="outline" className="mr-2">
+              See live resul
+            </Badge>
+            <Badge variant="outline" className="mr-2">
+              See Overall
+            </Badge>
+          </div>
+          <Button variant="gradient" className="w-full" asChild>
+            <Link to="/quiz">Open Quiz App</Link>
+          </Button>
+        </Card>
       </div>
 
       {/* Features */}
@@ -158,7 +192,7 @@ export function Home() {
       </div>
 
       {/* Structure Overview */}
-      <Card className="p-6">
+      {/* <Card className="p-6">
         <h3 className="font-semibold mb-4 flex items-center gap-2">
           <Code2 className="h-5 w-5" />
           Project Structure
@@ -216,7 +250,7 @@ export function Home() {
             </div>
           </div>
         </div>
-      </Card>
+      </Card> */}
     </div>
   );
 }

@@ -8,6 +8,7 @@ import { TodoApp } from "./apps/todo/TodoApp";
 import { WeatherApp } from "./apps/weather/WeatherApp";
 import { Navigation } from "./components/Navigation";
 import NotFound from "./pages/NotFound";
+import AgeCalculate from "./apps/ageCalculator/AgeCalculate";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
               <Route path="/" element={<Home />} />
               <Route path="/todo" element={<TodoApp />} />
               <Route path="/weather" element={<WeatherApp />} />
+              <Route path="/quiz" element={<AgeCalculate />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
