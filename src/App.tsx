@@ -3,36 +3,53 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "@/contexts/ThemeContext";
 import { Home } from "./pages/Home";
 import { TodoApp } from "./apps/todo/TodoApp";
 import { WeatherApp } from "./apps/weather/WeatherApp";
 import { Navigation } from "./components/Navigation";
 import NotFound from "./pages/NotFound";
 import AgeCalculate from "./apps/ageCalculator/AgeCalculate";
+import CalculatorApp from "./apps/calculator/CalculatorApp";
+import MusicPlayerApp from "./apps/music/MusicPlayerApp";
+import PhotoEditorApp from "./apps/photoEditor/PhotoEditorApp";
+import DigitalOclock from "./apps/oclock/DigitalOclock";
+import NotesApp from "./apps/notes/NotesApp";
+import GamesApp from "./apps/games/GamesApp";
+import ColorPickerApp from "./apps/colorPicker/ColorPickerApp";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <div className="min-h-screen bg-background">
-          <div className="container mx-auto px-4 py-6">
-            <Navigation />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/todo" element={<TodoApp />} />
-              <Route path="/weather" element={<WeatherApp />} />
-              <Route path="/quiz" element={<AgeCalculate />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="*" element={<NotFound />} />
-            </Routes>
+    <ThemeProvider>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <div className="min-h-screen bg-background">
+            <div className="container mx-auto px-4 py-6">
+              <Navigation />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/todo" element={<TodoApp />} />
+                <Route path="/weather" element={<WeatherApp />} />
+                <Route path="/quiz" element={<AgeCalculate />} />
+                <Route path="/calculator" element={<CalculatorApp />} />
+                <Route path="/music" element={<MusicPlayerApp />} />
+                <Route path="/photo-editor" element={<PhotoEditorApp />} />
+                <Route path="/oclock" element={<DigitalOclock />} />
+                <Route path="/notes" element={<NotesApp />} />
+                <Route path="/games" element={<GamesApp />} />
+                <Route path="/color-picker" element={<ColorPickerApp />} />
+                {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </div>
           </div>
-        </div>
-      </BrowserRouter>
-    </TooltipProvider>
+        </BrowserRouter>
+      </TooltipProvider>
+    </ThemeProvider>
   </QueryClientProvider>
 );
 

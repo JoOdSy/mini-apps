@@ -107,7 +107,7 @@ const AgeCalculate = () => {
 
   return (
     <section>
-      <div className="bg-white w-[100%] mb-5 rounded-md py-6">
+      <div className="bg-white w-[100%] rounded-md">
         <div className="space-y-6">
           {/* Hero Section */}
           <div className="relative overflow-hidden rounded-xl">
@@ -130,19 +130,17 @@ const AgeCalculate = () => {
       </div>
       {/* this is body of question app */}
 
-      <div className="flex items-end w-full">
-        <div className="w-[100%] max-w-[600px] my-2 rounded-md bg-slate-200 p-6">
+      <div className="flex items-center gap-2 w-full">
+        <div className="w-[100%] max-w-[600px] my-2 rounded-md bg-slate-200/10 p-6">
           <div className="flex justify-between items-center mb-4">
-            <h1 className="text-3xl font-semibold text-slate-700">
-              Simple quiz
-            </h1>
-            <div className="text-sm text-slate-600">
+            <h1 className="text-3xl font-semibol">Simple quiz</h1>
+            <div className="text-sm">
               Question {currentQuestionIndex + 1} of {questions.length}
             </div>
           </div>
 
           <div className="quiz py-5">
-            <h2 className="mb-6 text-xl font-semibold text-slate-800">
+            <h2 className="mb-6 text-xl font-semibold">
               {currentQuestion.question}
             </h2>
 
@@ -197,11 +195,11 @@ const AgeCalculate = () => {
             </div>
           </div>
         </div>
-        <div className="h-[64vh] flex items-center justify-center bg-slate-100 w-[100%]">
+        <div className="h-[62vh] flex items-center justify-center bg-slate-100/10 w-[100%] rounded-lg">
           {resultMessage ? (
             <h1 className="font-normal text-2xl">🎉 {resultMessage}</h1>
           ) : (
-            <p className="text-slate-500">
+            <p>
               Answer questions to see your result here.
             </p>
           )}
